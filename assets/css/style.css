@@ -50,7 +50,7 @@ header a {
     letter-spacing: 10%;
     text-decoration: none;
     background-color: #06C755;
-    padding: 0.8vw 3.5vw;
+    padding: 0.6vw 3.5vw;
     border-radius: 4vh;
 }
 
@@ -96,7 +96,7 @@ header a {
     position: absolute;
     right: 0;
     top: 0;
-    width: 55vw;
+    width: 60vw;
     height: 75vh;
     z-index: -1;
 }
@@ -124,7 +124,7 @@ header a {
 }
 
 .title-container span {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 500;
     letter-spacing: 2.4px;
     font-weight: medium;
@@ -134,14 +134,14 @@ header a {
 
 
 .title-container h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     letter-spacing: 3.6px;
     font-weight: medium;
     margin-top: 2.5rem;
 }
 
 .title-container h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     line-height: 150%;
     letter-spacing: 6.0px;
@@ -151,7 +151,7 @@ header a {
 .mv-img-container {
     height: 8vh;
     display: flex;
-    margin-top: 8vh;
+    margin-top: 2.8rem;
 }
 
 .mv-img-box {
@@ -270,7 +270,7 @@ header a {
 
 /* society */
 #society {
-    height: 100vh;
+    height: 140vh;
     background-color: #F0F5F8;
     display: flex;
     flex-direction: column;
@@ -400,6 +400,7 @@ header a {
 
     .society-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .society-box {
