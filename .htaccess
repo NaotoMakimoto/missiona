@@ -1,4 +1,0 @@
-AuthType Basic
-AuthName "Input your ID and Password."
-AuthUserFile C:\Users\makky\OneDrive\デスクトップ\missiona\..htpasswd
-require valid-user
