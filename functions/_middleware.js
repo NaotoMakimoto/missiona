@@ -1,15 +1,16 @@
-export const onRequest = async ({ request }) => {
+export async function onRequest(context) {
     const username = "missiona";
     const password = "kadai";
   
-    const authHeader = request.headers.get("Authorization");
-    if (authHeader) {
-      const encoded = authHeader.split(" ")[1];
+    const authorization = context.request.headers.get("Authorization");
+  
+    if (authorization) {
+      const encoded = authorization.split(" ")[1];
       const decoded = atob(encoded);
       const [user, pass] = decoded.split(":");
       if (user === username && pass === password) {
-        // 認証OKなら何も返さず次へ進む
-        return; // これでOK（Cloudflareでは return; で次の処理へ）
+        // 認証OKなら続行
+        return await context.next();
       }
     }
   
@@ -20,5 +21,5 @@ export const onRequest = async ({ request }) => {
         "WWW-Authenticate": 'Basic realm="Protected Area"',
       },
     });
-  };
+  }
   
